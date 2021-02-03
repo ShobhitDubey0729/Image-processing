@@ -1,4 +1,4 @@
-# This file should contain all the functions required by Wrapper.py
+
 
 from pathlib import Path
 import cv2
@@ -195,11 +195,3 @@ def binary_morphology(gray_image_path: Path) -> np.ndarray:
     new_image4 = new_image4.astype(np.uint8)
     cleaned_image = io.imshow(new_image4)
     return cleaned_image
-
-
-#def count_mser_components(gray_image_path: Path) -> list:
-#   mser_binary_image = None
-#   otsu_binary_image = None
-#   num_mser_components = 0
-#  num_otsu_components = 0
-#  return [mser_binary_image, otsu_binary_image, num_mser_components, num_otsu_components]
